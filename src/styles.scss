@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/streaks.scss';
+
+body { 
+    padding: 1; 
+    margin: 0; 
+    font-family: Roboto, sans-serif; 
+    
+  }
+
+  .container {
+    margin: 20px;
+    display:flex;
+}
+
+.align-items {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
