@@ -1,3 +1,59 @@
-<p>
-  home works!
-</p>
+<body>
+<div class="container"
+fxLayout="row"
+fxLayout.sm="column"
+fxLayout.xs="column"
+fxLayoutAlign.gt-md="space-around center"
+fxLayoutGap="10px"
+fxLayoutAlign="center center">
+
+
+
+
+<div flex-xs flex-gt-xs="100">
+<md-card fxFlex >
+<md-card-header>
+
+<md-card-title>
+    <div >
+        <img md-card-image src="/assets/fit.png" alt="logo">
+      </div>
+</md-card-title>
+</md-card-header>
+
+<md-card-content>
+
+        <p>{{ user | json }}</p>
+    
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <p>
+           <md-input-container>
+              <input  mdInput placeholder="Username" type="text" [(ngModel)]="user.username" name="username"  #username="ngModel"required>
+            </md-input-container>
+          </p>
+          <p>
+              <md-input-container>
+                  <input mdInput placeholder="Password" type="password" [(ngModel)]="user.password" name="password"  #password="ngModel"required>
+                </md-input-container>
+          </p>
+          <p>
+              <md-checkbox [(ngModel)]="user.remember" name="remember">Remember Me</md-checkbox>
+          </p>
+        <div class="form__wrapper--submit wow fadeInLeft" data-wow-delay="0.7s">
+            <div class="form__input-submit">
+                <button type="submit" name="submit" class="btn btn-block" [disabled]="loginForm.form.invalid">Log In</button>
+            </div>
+        </div>
+
+        <span class="flex-spacer" ></span>
+        <div class="text-center text-small wow fadeInLeft" data-wow-delay="0.8s"><a href="#">Cancel</a></div>
+    </form>
+
+</md-card-content>
+</md-card>
+
+</div>
+
+
+</div>
+</body>

@@ -1,6 +1,6 @@
-export class Badge {
+export class Routine {
     name: string;
     image: string;
-    category: string;
+    level: string;
     description: string;
 }

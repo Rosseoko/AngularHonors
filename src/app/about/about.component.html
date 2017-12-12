@@ -1,3 +1,93 @@
-<p>
-  about works!
-</p>
+<div class="container"
+fxLayout="column"
+fxLayoutGap="10px">
+
+<div fxFlex>
+       <div>
+          <img  src="/assets/about.jpg" alt="logo">
+          <hr>
+       </div>
+</div>
+
+ <div fxFlex>
+   <div fxLayout="column" fxLayout.gt-sm="row">
+     <div fxFlex="100">
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur, erat nec semper aliquam, enim nunc convallis nisl, at semper nunc ipsum ut nibh. Fusce ac nibh non enim iaculis dictum. Morbi fermentum rutrum justo et aliquam. Praesent non commodo felis. Praesent accumsan, leo non scelerisque hendrerit, quam nibh faucibus urna, eget volutpat justo lorem eget tortor. Integer vulputate feugiat neque, id tristique massa sodales pretium. Duis rutrum feugiat dolor eu iaculis. Aenean placerat luctus dolor.
+          </p>
+
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur, erat nec semper aliquam.
+          </p>
+
+         </div>
+   </div>
+ </div>
+ 
+ <div fxFlex>
+           <md-card>
+               <blockquote>
+                   <h3>An early-morning walk is a blessing for the whole day.</h3>
+                   <footer>-- Henry David Thoreau,
+                     <cite>Diversion Books, 2014</cite>
+                   </footer>
+               </blockquote>
+           </md-card>
+ </div>
+
+
+
+</div>
+
+
+<div class="container"
+fxLayout="column"
+fxLayoutGap="10px">
+
+
+
+ <div fxFlex>
+   <div fxLayout="column" fxLayout.gt-sm="row">
+     <div fxFlex="50">
+  <div fxFlex>
+      <h2>Routines Examples</h2>
+
+
+      <md-list *ngIf="routines" [@expand]> 
+        <md-list-item  *ngFor="let routine of routines">
+            <img md-list-avatar src={{routine.image}} alt="{{routine.name}}" class="md-avatar">
+            <h2 md-line><b> {{routine.name}} </b></h2>
+            <p md-line> ( {{routine.level}} )</p>
+            <p md-line>
+              <span> {{routine.description}} </span>
+            </p>
+        </md-list-item>
+     </md-list>
+
+
+   </div>
+     </div>
+     <div fxFlex="40">
+        
+   <div fxFlex>
+      <h2>Badges Examples</h2>
+
+
+      <md-list *ngIf="badges" [@expand]> 
+        <md-list-item  *ngFor="let badge of badges">
+            <img md-list-avatar src={{badge.image}} alt="{{badge.name}}" class="md-avatar">
+            <h2 md-line><b> {{badge.name}} </b></h2>
+            <p md-line> ( {{badge.category}} )</p>
+            <p md-line>
+              <span> {{badge.description}} </span>
+            </p>
+        </md-list-item>
+     </md-list>
+
+
+   </div>
+     </div>
+   </div>
+ </div>
+ 
+ 

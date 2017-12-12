@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+  
+  user = {remember: false};
+  
+    constructor() { }
+  
+    ngOnInit() {
+    }
+  
+    onSubmit() {
+      console.log("User: ", this.user);
+    }
 
 }

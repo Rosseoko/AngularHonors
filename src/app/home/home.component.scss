@@ -1,0 +1,127 @@
+
+/* Basic Reset */
+
+body { 
+    background-image: url('/assets/background.jpg')
+    
+}
+/* Basics Styles */
+a {
+    text-decoration: none;
+    color: #2196f3;
+}
+
+
+.text-small { font-size: 75%; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+
+.left { float: left; }
+.right { float: right; }
+
+.display__inline { display: inline; }
+
+
+/* Material Design Form Inputs */
+.form {}
+
+.form__wrapper {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    vertical-align: top;
+}
+
+.form__wrapper--submit {
+    padding: 1.6rem 0;
+}
+
+.form__input {
+    display: block;
+    position: relative;
+    margin-top: 1em;
+    padding: 0.84em 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 1.6rem;
+    outline: 0;
+    //background: transparent;
+    border: none;
+
+    border-bottom: solid 1px #ddd;
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+       -moz-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+         -o-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+            transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #2196f3 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #2196f3 4%);
+    background-position: -400px 0;
+    background-size: 400px 100%;
+    background-repeat: no-repeat;
+    
+    /**
+     * Remove default box-shadow for required pseudo classes 
+     */
+    &:required {
+        box-shadow: none;
+    }
+    
+    /**
+     *  When input contain a class of .error 
+     */
+    &.error {
+        -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+           -moz-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+             -o-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+                transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #f44336 4%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #f44336 4%);
+        background-position: 0 0;
+        background-size: 400px 100%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+/* Basic Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.3em 1.5em;
+    border-radius: 3px;
+    background-color: #2196f3;
+    color: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+    box-shadow: 
+        0 1px 3px 0 rgba(0, 0, 0, 0.24), 
+        0 1px 2px 0 rgba(0, 0, 0, 0.12);
+
+    transition: all 0.2s ease;
+
+    &:focus,
+    &:hover {
+        background-color: darken(#2196f3, 5%);
+    }
+
+    &.btn-block {
+        width: 100%;
+        display: block;
+    }
+}
+
+
