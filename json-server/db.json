@@ -2,26 +2,26 @@
   "routines": [
     {
       "name": "Jump Workout",
-      "image": "http://localhost:3000/images/arms.jpg",
+      "image": "http://69.164.207.235:3000/images/jumping.jpg",
       "level": "Easy",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
       "name": "Morning workout",
-      "image": "http://localhost:3000/images/morning.jpg",
+      "image": "http://69.164.207.235:3000/images/morning.jpg",
       "level": "Easy",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
       
     },
     {
       "name": "Crossfit workout",
-      "image": "http://localhost:3000/images/crossfit.jpg",
+      "image": "http://69.164.207.235:3000/images/crossfit.jpg",
       "level": "Medium",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
       "name": "Arms workout",
-      "image": "http://localhost:3000/images/arms.jpg",
+      "image": "http://69.164.207.235:3000/images/arms.jpg",
       "level": "Easy",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     }
@@ -29,26 +29,26 @@
   "badges": [
     {
       "name": "Started workout plan",
-      "image": "http://localhost:3000/images/badge.jpg",
+      "image": "http://69.164.207.235:3000/images/badges.jpg",
       "category": "Begginer",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
 
       "name": "100 Daily steps",
-      "image": "http://localhost:3000/images/badge.jpg",
+      "image": "http://69.164.207.235:3000/images/badges.jpg",
       "category": "Begginer",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
       "name": "Explorer",
-      "image": "http://localhost:3000/images/badge.jpg",
+      "image": "http://69.164.207.235:3000/images/badges.jpg",
       "category": "Begginer",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. D"
     },
     {
       "name": "First week on a row",
-      "image": "http://localhost:3000/images/badge.jpg",
+      "image": "http://69.164.207.235:3000/images/badges.jpg",
       "category": "Begginer",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. D"
     }
